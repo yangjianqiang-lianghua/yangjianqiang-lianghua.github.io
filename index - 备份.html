@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>杨建强日记</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(242, 242, 242);
+    }
+    .content {
+      padding-top: 50px;
+      width: 80%;
+      margin: auto;
+    }
+    .merge {
+      width: 80%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .merge .column {
+      margin-right: 10px;
+      align-items: left;
+      flex-shrink: 0;
+    }
+    .merge .column button {
+      margin-right: 10px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .merge .column button:hover {
+      background-color: rgb(93, 92, 222);
+      color: white;
+    }
+    .content a {
+      text-decoration: none;
+      color: blue;
+    }
+    .content a:visited {
+      color: blue;
+    }
+  </style>
+  <script src="./tracking.js"></script>
+  <script>
+
+    // JavaScript代码
+    function showParagraphs(id) {
+      var paragraphs = document.getElementsByTagName('p');
+
+      if (id === 'all') {
+        // 如果ID为'all'，显示全部段落元素
+        for (var i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].style.display = 'block';
+        }
+      } else {
+        // 隐藏非匹配的段落元素，显示匹配的段落元素
+        for (var i = 0; i < paragraphs.length; i++) {
+          var paragraph = paragraphs[i];
+
+          if (paragraph.id === id) {
+            paragraph.style.display = 'block';
+          } else {
+            paragraph.style.display = 'none';
+          }
+        }
+      }
+    }
+    function scrollToTop() {      window.scrollTo({       top: 0,       behavior: "smooth"      });   }
+  </script>
+</head>
+<body>
+  <div class="topnav">
+    <div class="merge">
+      <div class="column"><button onclick="showParagraphs('all')">全部文章</button></div>
+      <div class="column"><button onclick="showParagraphs('金融 交易')">金融 交易</button></div> <!-- 原文；财报； -->
+      <div class="column"><button onclick="showParagraphs('阅读笔记')">阅读笔记</button></div> <!-- 统计书籍 财新周刊 社科书籍 -->
+      <div class="column"><button onclick="showParagraphs('碎碎念')">碎碎念</button></div> <!-- 统计书籍 财新周刊 社科书籍 -->
+      <div class="column"><button onclick="showParagraphs('科研 论文')">科研 论文</button></div> <!-- 文献阅读&复现 论文红与黑 生信分析 医学进展 -->
+      <div class="column"><button onclick="showParagraphs('旅游 出海')">旅游 出海</button></div> <!-- R语言 科研图表 论文 -->
+      <div class="column"><button onclick="showParagraphs('驳复')">驳复</button></div> <!-- R语言 科研图表 论文 -->
+      <div class="column"><button onclick="showParagraphs('我的业务')">我的业务</button></div> <!-- R语言 科研图表 论文 -->
+    </div>
+  </div>
+
+<div class="content">
+  <p id=""><a href="./otherlink.html" target="_blank">=== 长期置顶 - 导航网站 ===</a></p>
+  <p id="金融 交易"><a href="./投资中的那些毒鸡汤.html" target="_blank">置顶 - 投资中的那些毒鸡汤</a></p>
+  <p id="金融 交易"><a href="./海外，美联储加降息、美股牛熊争辩.html" target="_blank">置顶 - 海外，美联储加降息、美股牛熊争辩</a></p>
+ <hr>
+
+
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id=""><a href="" target="_blank"></a></p>
+<p id="阅读笔记"><a href="./阅读笔记，财经新闻阅读-2024年09月.html" target="_blank">阅读笔记，财经新闻阅读-2024年09月</a></p>
+
+<p id="阅读笔记"><a href="./读书笔记，《中央帝国密码三部曲》郭建龙.html" target="_blank">读书笔记，《中央帝国密码三部曲》郭建龙.html</a></p>
+<p id="阅读笔记"><a href="./读书笔记，《在峡江的转弯处》陈行甲人生笔记.html" target="_blank">读书笔记，《在峡江的转弯处》陈行甲人生笔记</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，财经新闻阅读-2024年08月.html" target="_blank">阅读笔记，财经新闻阅读-2024年08月</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，财经新闻阅读-2024年07月.html" target="_blank">阅读笔记，财经新闻阅读-2024年07月.html</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，财经新闻阅读-2024年06月.html" target="_blank">阅读笔记，财经新闻阅读-2024年06月.html</a></p>
+<p id="阅读笔记"><a href="./读书笔记，《控糖革命》.html" target="_blank">读书笔记，《控糖革命》.html</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，《财新周刊》2024年第14期.html" target="_blank">阅读笔记，《财新周刊》2024年第14期</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，财经新闻阅读-2024年5月.html" target="_blank">阅读笔记，财经新闻阅读-2024年5月</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，财新&邯郸.html" target="_blank">阅读笔记，财新&邯郸</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，环境保护与经济发展，记一次科研试验.html" target="_blank">阅读笔记，环境保护与经济发展，记一次科研试验</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，《财新周刊》2024年第13期.html" target="_blank">阅读笔记，《财新周刊》2024年第13期</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，《财新周刊》2024年第12期.html" target="_blank">阅读笔记，《财新周刊》2024年第12期</a></p>
+<p id="科研 论文"><a href="./科研 论文，人文社科-论文写作.html" target="_blank">科研 论文，人文社科-论文写作</a></p>
+<p id="碎碎念"><a href="./碎碎念，湿疹，2024年.html" target="_blank">碎碎念，湿疹，2024年</a></p>
+<p id="阅读笔记"><a href="阅读笔记，《财新周刊》2024年第11期.html" target="_blank">阅读笔记，《财新周刊》2024年第11期</a></p>
+<p id="阅读笔记"><a href="读书笔记，《了不起的基因》尹烨.html" target="_blank">读书笔记，《了不起的基因》尹烨</a></p>
+<p id="科研 论文"><a href="科研 论文，读研日记.html" target="_blank">科研 论文，读研日记</a></p>
+<p id="阅读笔记"><a href="./读书笔记，《枪炮 病菌与钢铁》[美]贾雷德·戴蒙德 著 王道还 廖月娟 译 .html" target="_blank">读书笔记，《枪炮 病菌与钢铁》[美]贾雷德·戴蒙德 著 王道还 廖月娟 译</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，《财新周刊》2024年第10期.html" target="_blank">阅读笔记，《财新周刊》2024年第10期</a></p>
+<p id="碎碎念"><a href="碎碎念，2024年03月.html" target="_blank">碎碎念，2024年03月</a></p>
+<p id="我的业务"><a href="./我的业务，解压包.html" target="_blank">R / Python 解压小模块</P></a></p>
+<p id="阅读笔记"><a href="./阅读笔记，《财新周刊》2024年第09期.html" target="_blank">阅读笔记，《财新周刊》2024年第09期</a></p>
+<p id="阅读笔记"><a href="./读书笔记，《生命密码》尹烨.html" target="_blank">读书笔记，《生命密码》尹烨</a></p>
+<p id="阅读笔记"><a href="./读书笔记，《疯狂的尿酸》戴维珀尔马特著 王家宁译.html" target="_blank">读书笔记，《疯狂的尿酸》戴维珀尔马特著 王家宁译</a></p>
+<p id="阅读笔记"><a href="./读书笔记，《别拿相关当因果！因果关系简易入门》[美] 萨曼莎 • 克莱因伯格.html" target="_blank">读书笔记，《别拿相关当因果！因果关系简易入门》[美] 萨曼莎 • 克莱因伯格</a></p>
+<p id="阅读笔记"><a href="./读书笔记，《战天京：晚清军政传信录》谭伯牛.html" target="_blank">读书笔记，更新中，《战天京：晚清军政传信录》谭伯牛</a></p>
+<p id="科研 论文"><a href="./生信，生信初探.html" target="_blank">生信，生信初探</a></p>
+<p id="阅读笔记"><a href="./读书笔记，《No Trade Is Free》莱特希泽.html" target="_blank">读书笔记，更新中，《No Trade Is Free》莱特希泽</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，2024年03月上.html" target="_blank">阅读笔记，更新中，2024年03月上</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，2024年02月.html" target="_blank">阅读笔记，2024年02月</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，2024年01月12日~月底.html" target="_blank">阅读笔记，2024年01月12日~月底</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，2024年01月1日~11日.html" target="_blank">阅读笔记，2024年01月1日~11日</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，2023年12月.html" target="_blank">阅读笔记，2023年12月</a></p>
+<p id="阅读笔记"><a href="./阅读笔记，2023年11月.html" target="_blank">阅读笔记，2023年11月</a></p>
+
+
+<h4>微信公众号：杨建强日记  //  微博：<a href="https://weibo.com/u/7889938651">杨建强日记</a></h4>
+
+</div>
+
+</body>
+</html>
